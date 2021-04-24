@@ -7,7 +7,7 @@ public class HelloWorld {
         int myAge = age;
 
         byte bitten = 30;
-        long tooBig = 3999999999L;
+        long tooBig = 3999999999L; // Numbers (ints) get too big, make primitive 'long' and append L to the end to solve this
         float price = 10.99F;
         char letter = 'A';
         boolean eligible = true;
@@ -22,5 +22,9 @@ public class HelloWorld {
 
         Date now = new Date();
         System.out.println(now);
+
+        String message = "Hello World" + "!!"; // Short hand, this isnt a primitive
+        System.out.println(message);
+        System.out.println(message.endsWith("!!")); // true
     }
 }
