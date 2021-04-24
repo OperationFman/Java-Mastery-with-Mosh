@@ -23,8 +23,14 @@ public class HelloWorld {
         Date now = new Date();
         System.out.println(now);
 
-        String message = "Hello World" + "!!"; // Short hand, this isnt a primitive
+        String message = "Hello World" + "!!"; // Short hand, this isnt a primitive. Strings are immutable
         System.out.println(message);
         System.out.println(message.endsWith("!!")); // true
+        System.out.println(message.replace("!", "?")); // .replace does not modify the original string
+
+        String escape = "Hello \"World\""; // How to get "" in a string
+        String fileLocation = "c:\\Windows\\..."; // outputs: C:\Windows\...
+        System.out.println(escape);
+        System.out.println(fileLocation);
     }
 }
