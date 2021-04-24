@@ -30,7 +30,9 @@ public class HelloWorld {
 
         String escape = "Hello \"World\""; // How to get "" in a string
         String fileLocation = "c:\\Windows\\..."; // outputs: C:\Windows\...
+        String newLine = "Hello\n World"; // outputs two a new line, use \t for a tab
         System.out.println(escape);
         System.out.println(fileLocation);
+        System.out.println(newLine);
     }
 }
