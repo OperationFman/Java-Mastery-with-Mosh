@@ -49,7 +49,7 @@ public class ControlFlow {
 
 
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) { // aka for i in range
             System.out.println("Hello World " + i);
         }
 
@@ -59,12 +59,22 @@ public class ControlFlow {
             k --;
         }
 
-        String input = ""; 
+        String input = "quit"; // Make empty to run the loop
         Scanner scanner = new Scanner(System.in);
-        while (!input.equals("quit")) { // Remember, String is a reference type. Comparing input to "quit" is actually compare memory addresses, which wouldn't match. use .equals to compare the outputs values
+        while (!input.equals("quit")) { // Remember, String is a reference type. Comparing input to "quit" is actually comparing memory addresses, which wouldn't match. use .equals() to compare the output values
             System.out.println("input: ");
             input = scanner.next().toLowerCase();
             System.out.println(input);
         }
+
+        String[] fruits = {"Apple", "Mango", "Orange"};
+        for (String i : fruits) { // Traditional 'for i in array', but no access to the index
+            System.out.println(i);
+        }
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]); // Similar to 'for i in enumerate(array)' so i is the index
+        }
+
+
     }
 }
