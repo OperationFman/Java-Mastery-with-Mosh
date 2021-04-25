@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlow {
     public static void main(String[] args) {
         int temperature = 22;
@@ -33,8 +35,6 @@ public class ControlFlow {
         String className = earnings > 100000 ? "First Class" : "Economy"; // ternerary Operator, alternative to if else
         System.out.println(className); // "First Class"
         
-
-
         String role = "admin";
         switch (role) {
             case "admin":
@@ -47,5 +47,24 @@ public class ControlFlow {
                 System.out.println("You are a guest");
         }
 
+
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Hello World " + i);
+        }
+
+        int k = 5;
+        while (k >= 0) {
+            System.out.println("Hello World " + k);
+            k --;
+        }
+
+        String input = ""; 
+        Scanner scanner = new Scanner(System.in);
+        while (!input.equals("quit")) { // Remember, String is a reference type. Comparing input to "quit" is actually compare memory addresses, which wouldn't match. use .equals to compare the outputs values
+            System.out.println("input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
     }
 }
