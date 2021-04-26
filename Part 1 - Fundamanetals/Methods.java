@@ -4,10 +4,11 @@ public class Methods {
     // void == If not returning anything. Replace with 'int' if returning an int, etc
     // main() == Must always be at the start, similar to __init__()
     public static void main(String[] args) {
-        greetUser("Franklin");
+        String message = greetUser("Franklin", "Moon");
+        System.out.println(message);
     }
 
-    public static void greetUser(String name) {
-        System.out.println("Hello " + name);
+    public static String greetUser(String firstName, String lastName) {
+        return "Hello " + firstName + " " + lastName;
     }
 }
