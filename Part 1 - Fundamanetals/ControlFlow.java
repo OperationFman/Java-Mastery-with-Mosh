@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ControlFlow {
     public static void main(String[] args) {
+        // AND, OR, NOT
         int temperature = 22;
         boolean isWarm = temperature > 20 && temperature < 30;
         System.out.println(isWarm); // true
@@ -17,6 +18,7 @@ public class ControlFlow {
 
 
 
+        // IF, ELSE IF, ELSE
         int temp = 32;
         if (temp > 30) {
             System.out.println("It's a hot day");
@@ -31,10 +33,16 @@ public class ControlFlow {
         boolean isHighIncome = income > 100000; // If this evaluates to true, it's true. Better than if else apparently
         System.out.println(isHighIncome); // true
 
+
+        
+        // TERNERARY
         int earnings = 120000;
         String className = earnings > 100000 ? "First Class" : "Economy"; // ternerary Operator, alternative to if else
         System.out.println(className); // "First Class"
         
+
+
+        // SWITCH
         String role = "admin";
         switch (role) {
             case "admin":
@@ -49,6 +57,7 @@ public class ControlFlow {
 
 
 
+        // FOR LOOP
         for (int i = 0; i < 5; i++) { // aka for i in range
             System.out.println("Hello World " + i);
         }
@@ -59,6 +68,9 @@ public class ControlFlow {
             k --;
         }
 
+
+
+        // STRING REF ISSUES
         String input = "quit"; // Make empty to run the loop
         Scanner scanner = new Scanner(System.in);
         while (!input.equals("quit")) { // Remember, String is a reference type. Comparing input to "quit" is actually comparing memory addresses, which wouldn't match. use .equals() to compare the output values
@@ -67,6 +79,9 @@ public class ControlFlow {
             System.out.println(input);
         }
 
+
+
+        // FOR EACH
         String[] fruits = {"Apple", "Mango", "Orange"};
         for (String i : fruits) { // Traditional 'for i in array', but no access to the index
             System.out.println(i);
