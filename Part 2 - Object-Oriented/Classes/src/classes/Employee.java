@@ -1,12 +1,17 @@
 package classes;
 
 public class Employee {
-    private int baseSalary;
+    private int baseSalary; // instance Fields
+
+    public static int numberOfEmployees; // static Fields
+
     private int hourlyRate;
 
     public Employee(int baseSalary, int hourlyRate) { // Uses the setters to set defaults values. aka it';'s a constuctor
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        numberOfEmployees++; // Whenever a new employeee is created, mthe above static field is incrmeneted. 
+        // In this case, that means we can see how many employees exist by just dot-notationing it
     }
 
     public int calculateWage(int extraHours) {
