@@ -2,15 +2,11 @@ import classes.Employee;
 
 public class Main {
     public static void main(String[] args) {
-        int baseSalary = 50000;
-        int extraHours = 10;
-        int hourlyRate = 20;
-        int wage = calculateWage(baseSalary, extraHours, hourlyRate);
+        var employee = new Employee();
+        employee.baseSalary = 50000;
+        employee.hourlyRate = 20;
+        int wage = employee.calculateWage(10);
         System.out.println(wage); // 50200
         
-    }
-
-    public static int calculateWage(int baseSalary, int extraHours, int hourlyRate) {
-        return baseSalary + extraHours * hourlyRate;
     }
 }
