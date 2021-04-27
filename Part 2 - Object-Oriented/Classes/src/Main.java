@@ -10,6 +10,15 @@ public class Main {
         textBox2.setText("Box 2");
         System.out.println(textBox2.text); // Box 2
 
+        int baseSalary = 50000;
+        int extraHours = 10;
+        int hourlyRate = 20;
+        int wage = calculateWage(baseSalary, extraHours, hourlyRate);
+        System.out.println(wage);
         
+    }
+
+    public static int calculateWage(int baseSalary, int extraHours, int hourlyRate) {
+        return baseSalary + extraHours * hourlyRate;
     }
 }
