@@ -13,6 +13,8 @@ public class Main {
         System.out.println(salary); // 50000
         System.out.println(hourlyRate); // 20
 
+        employee.printNumberOfEmployees(); // Static Method, used to see how many instanced got made (See class Employees for more)
+
 
 
         var browser = new Browser(); // Check Browser class/file to see how decoupling was setup

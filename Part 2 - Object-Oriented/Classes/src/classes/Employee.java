@@ -14,6 +14,10 @@ public class Employee {
         // In this case, that means we can see how many employees exist by just dot-notationing it
     }
 
+    public static void printNumberOfEmployees() {
+        System.out.println(numberOfEmployees); // fyi this cannot see the others methods in this class
+    }
+
     public int calculateWage(int extraHours) {
         return baseSalary + extraHours * hourlyRate;
     }
