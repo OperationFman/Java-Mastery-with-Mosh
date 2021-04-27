@@ -1,4 +1,5 @@
 import classes.Employee;
+import classes.Browser;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,8 +10,14 @@ public class Main {
 
         int salary = employee.getBaseSalary(); // getter
         int hourlyRate = employee.getHourlyRate(); // getter
+        
         System.out.println(wage); // 50200
         System.out.println(salary); // 50000
         System.out.println(hourlyRate); // 20
+
+
+
+        var browser = new Browser(); // Check class to see how decoupling was setup
+        browser.navigate("192.168.0.1"); // Return <html></html>
     }
 }
