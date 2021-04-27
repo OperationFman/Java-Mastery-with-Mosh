@@ -3,9 +3,7 @@ import classes.Browser;
 
 public class Main {
     public static void main(String[] args) {
-        var employee = new Employee();
-        employee.setBaseSalary(50000); // setter
-        employee.setHourlyRate(20); // setter
+        var employee = new Employee(50000, 20); // Check this class/file, it uses setters
         int wage = employee.calculateWage(10); // setter
 
         int salary = employee.getBaseSalary(); // getter
@@ -17,7 +15,7 @@ public class Main {
 
 
 
-        var browser = new Browser(); // Check class to see how decoupling was setup
+        var browser = new Browser(); // Check Browser class/file to see how decoupling was setup
         browser.navigate("192.168.0.1"); // Return <html></html>
     }
 }

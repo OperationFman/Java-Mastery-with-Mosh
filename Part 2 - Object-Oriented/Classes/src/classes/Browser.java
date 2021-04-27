@@ -7,7 +7,7 @@ public class Browser {
         System.out.println(html);
     }
 
-    private String sentHttpRequest(String ip) {
+    private String sentHttpRequest(String ip) { // These are hidden from dot notation
         return "<html></html>";
     }
 
