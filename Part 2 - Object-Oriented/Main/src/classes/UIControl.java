@@ -1,4 +1,4 @@
-package uiclasses;
+package classes;
 
 public class UIControl {
     private boolean isEnabled = true;
