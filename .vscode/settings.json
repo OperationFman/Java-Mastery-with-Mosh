@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Part 2 - Object-Oriented/Classes/src",
         "Part 1 - Fundamanetals",
-        "Part 2 - Object-Oriented/Classes/src"
+        "Part 2 - Object-Oriented/MortgageCalcOOP/src"
     ]
 }
