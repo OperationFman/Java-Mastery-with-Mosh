@@ -1,3 +1,5 @@
+package calc;
+
 public class UIControl {
     private boolean isEnabled = true;
 
