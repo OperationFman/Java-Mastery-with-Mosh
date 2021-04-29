@@ -3,6 +3,11 @@ package mortgageclasses;
 public class UIControl {
     private boolean isEnabled = true;
 
+    public UIControl() {
+        this.isEnabled = isEnabled;
+        System.out.println("UIControl");
+    }
+
     public void enable() {
         isEnabled = true;
     }
