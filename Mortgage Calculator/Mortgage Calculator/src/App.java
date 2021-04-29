@@ -1,6 +1,7 @@
-import calc.UIControl;
+import mortgageclasses.TextBox;
+import mortgageclasses.UIControl;;
 
-public class Main {
+public class App {
     public static void main(String[] args) throws Exception {
         var control = new UIControl();
         control.disable();

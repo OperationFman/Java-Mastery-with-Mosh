@@ -1,4 +1,4 @@
-package calc;
+package mortgageclasses;
 
 public class UIControl {
     private boolean isEnabled = true;

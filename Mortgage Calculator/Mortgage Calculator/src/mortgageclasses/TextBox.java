@@ -1,4 +1,4 @@
-package calc;
+package mortgageclasses;
 
 public class TextBox extends UIControl {
     private String text = "";
